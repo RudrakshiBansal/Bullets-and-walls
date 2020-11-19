@@ -35,20 +35,7 @@ if(hasCollided(bullet, wall)){
 
 }
    
-
+hasCollided(wall, bullet);
   drawSprites();
 }
 
-function hasCollided(lbullet, lwall ){
-
-bulletRightEdge = lbullet.x + lbullet.width;
-wallLeftEdge = lwall.x;
-
-if(bulletRightEdge>=wallLeftEdge){
-  return true;
-
-}
-return false;
-
-
-}
